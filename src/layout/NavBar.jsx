@@ -5,7 +5,7 @@ const NavBar = () => {
         <div className="nav-bar-item">
             <div className="logo">
                 <PiStudent />
-                <p className="name-business">
+                <p className="business">
                     Hoc Sinh
                 </p>
             </div>

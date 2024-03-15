@@ -1,20 +1,181 @@
-.nav-bar{
+.nav-bar {
     height: 100%;
     background: red;
-    width: 279px;
+    width: 296px;
     position: fixed;
 }
-.container{
+
+.container {
     display: flex;
 }
-.header-content{
-    margin-left: 279px;
+
+.header-content {
+    margin-left: 296px;
     width: 100%;
 }
-.header{
-    border: 1px solid;
+
+.header {
+    border-bottom: 1px solid #3333;
 }
-.content{
+
+.content {
     height: 100%;
-    border: 1px solid;
+}
+
+.header-item {
+    display: flex;
+}
+
+.name-business {
+    width: 627px;
+    display: flex;
+    align-items: center;
+}
+
+.school-inf {
+    display: flex;
+    align-items: center;
+}
+a{
+text-decoration: none;
+color: rgb(39, 38, 38);
+}
+.school-name {
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+    padding: 0px 4px;
+    box-shadow: 0px 0px 4px 0.2px rgb(186 181 181);
+    border-radius: 3px;
+
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color: #9b9a9a33;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(151, 149, 149);
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+    overflow-y: scroll;
+    animation-name: show-years-school;
+    animation-duration: 0.1s;
+    height: 91px;
+    position: absolute;
+    color: black;
+    width: 117px;
+    margin-top: 2px;
+    border: 0.1px solid #3333;
+    padding-left: 5px;
+    background: white;
+}
+
+@keyframes show-years-school {
+    0% {
+        height: 18px;
+    }
+
+    25% {
+        height: 28px;
+    }
+
+    50% {
+        height: 45px;
+    }
+
+    75% {
+        height: 91px;
+    }
+}
+.icon-search-notification{
+    display: flex;
+
+}
+.icon-search{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #7b7979;
+}
+.icon-notification{
+    color: #7b7979;
+}
+.count{
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    margin-bottom: 6px;
+}
+.name{
+    margin-left: 5px;
+    color: #4e4c4c;
+}
+.name-business{
+    margin-left: 10px;
+}
+.attendanceItem{
+    background: #f6f6f6;
+    height: 41px;
+    display: flex;
+}
+.attendance{
+    display: flex;
+    align-items: center;
+    align-items: 41px;
+    justify-content: center;  
+    padding-right: 14px;
+    padding-left: 14px
+}
+.active{
+    border-top: 2px solid green;
+    background: white;
+    color: green;
+    height: 40px;
+    width: 189px;
+    padding-right: 0px;
+    padding-left: 0px
+}
+.number-student{
+    margin-right: 12px;
+    margin-left: 12px;
+    border: 1px solid green;
+    width: 87px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+}
+.number-student-go-to-school{
+    border: 1px solid #3333;
+    width: 97px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px; 
+}
+.Study-permits-are-allowed{
+    margin-left: 12px;
+    margin-right: 12px;
+    border: 1px solid #3333;
+    width: 99px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Study-permits-are-not-allowed{
+    border: 1px solid #3333;
+    width: 127px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

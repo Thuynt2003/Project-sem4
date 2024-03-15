@@ -3,7 +3,10 @@ import Header from "./Header";
 import NavBar from "./NavBar";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import '../style/mainStyle.css'
+import '../style/mainStyle.css';
+import { PATH } from "../commons/Paths";
+import Attendences from "../pages/Attendance/Attendence";
+
 const LayOut = () => {
     return (
         <div className="container">
@@ -16,7 +19,8 @@ const LayOut = () => {
                 </div>
                 <div className="content">
                     <Routes>
-                        <Route path="/" element={<Home />} />
+                        <Route path={PATH.HOME} element={<Home />} />
+                        <Route path={PATH.ATTENDENCE}element={<Attendences/>} />
                     </Routes>
                 </div>
 
